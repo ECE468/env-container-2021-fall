@@ -8,7 +8,7 @@ RUN apt update && \
     wget https://www.antlr.org/download/antlr-4.9.2-complete.jar -O /usr/local/share/antlr.jar && \
     useradd -m user
 ADD antlr /usr/local/bin/
-RUN echo 'export CLASSPATH=$CLASSPATH:/usr/local/share/antlr.jar' >> /etc/profile
+ENV CLASSPATH=/usr/local/share/antlr.jar
 
 USER user
 WORKDIR /home/user
