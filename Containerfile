@@ -1,6 +1,6 @@
 FROM debian:stable
 RUN apt update && \
-    apt install -y wget git gnupg software-properties-common build-essential && \
+    apt install -y wget git gnupg software-properties-common build-essential python3-sh && \
     wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | gpg --dearmor > /etc/apt/trusted.gpg.d/adpotopenjdk.gpg && \
     add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/ && \
     apt update && \
@@ -12,4 +12,5 @@ ENV CLASSPATH=/usr/local/share/antlr.jar
 
 USER user
 WORKDIR /home/user
+RUN git clone https://github.com/milindkulkarni/RiscSim
 CMD ["/bin/bash"]

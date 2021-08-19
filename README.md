@@ -11,6 +11,7 @@ All project grading will be done within this environment.
 - Antlr 4.9.2 Complete Jar Ball is installed at `/usr/local/share/antlr.jar`
 - A convenient script to call Antlr tool is installed at `/usr/local/bin/antlr` and calling `antlr` would invoke it
 - `CLASSPATH` environment variable is set to the above jar ball so all Java program depending on Antlr runtime shall run without problem.
+- [RiscSim](https://github.com/milindkulkarni/RiscSim) will be cloned at `/home/user/RiscSim`
 
 ## Usage
 
