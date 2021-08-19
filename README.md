@@ -12,6 +12,7 @@ All project grading will be done within this environment.
 - A convenient script to call Antlr tool is installed at `/usr/local/bin/antlr` and calling `antlr` would invoke it
 - `CLASSPATH` environment variable is set to the above jar ball so all Java program depending on Antlr runtime shall run without problem.
 - [RiscSim](https://github.com/milindkulkarni/RiscSim) will be cloned at `/home/user/RiscSim`
+- `sudo` is available to use without password, in case you need any system-level modifications
 
 ## Usage
 
